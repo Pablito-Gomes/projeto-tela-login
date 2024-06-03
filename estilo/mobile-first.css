@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #5F2C82;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+article{
+    background-color: white;
+    max-width: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+#img{
+    background: black url(../img/constucao.jpg) no-repeat top center;
+    width: 270px;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+#texto{
+    text-align: center;
+    padding: 10px;
+}
+
+a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    max-width: 200px;
+    border-radius: 5px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+#entrar{
+   
+    background-color: #53AAA7;
+    color: white;
+}
+
+#esqueci-a-senha{
+    border: 2px solid #53AAA7;
+    padding-left: 7px;
+    color: #53AAA7;
+}

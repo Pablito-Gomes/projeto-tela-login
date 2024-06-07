@@ -1,36 +1,89 @@
 @charset "UTF-8";
 
+
+
+/* Telas 600px - 768px */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* Paleta de cores */
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
 html, body{
     width: 100vw;
     height: 100vh;
-    background-color: #5F2C82;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: justify;
+}
+
+main{
+
+    width: 100vw;
+    height: 100vh;
+
+   
+   
+
+    position: relative;
+
 }
 
 article{
     background-color: white;
-    max-width: 270px;
-    border-radius: 10px;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
     box-shadow: 0px 0px 5px black;
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 #img{
-    background: black url(../img/constucao.jpg) no-repeat top center;
-    width: 270px;
-    height: 300px;
-    border-radius: 10px 10px 0px 0px;
-    background-color: white;
+    background: black url(../img/marvin-meyer-SYTO3xs06fU-unsplash.jpg) no-repeat;
+    height: 200px;
     background-size: cover;
+    display: block;
+}
+
+#form{
+    padding: 10px;
+    display: block;
+   
 }
 
 h1{
     text-align: center;
+    margin-top: 15px;
 }
 
 #texto{
     text-align: center;
-    padding: 10px;
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.input{
+    background-color: var(--cor2);
+    width: 200px;
+    border-radius: 7px;
 }
 
 a{
@@ -45,13 +98,16 @@ a{
 }
 
 #entrar{
-   
-    background-color: #53AAA7;
+    padding: 10px;
+    background-color: var(--cor1);
     color: white;
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 10px;
 }
 
 #esqueci-a-senha{
-    border: 2px solid #53AAA7;
+    border: 2px solid var(--cor1);
     padding-left: 7px;
-    color: #53AAA7;
+    color: var(--cor1);
 }

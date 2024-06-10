@@ -21,44 +21,61 @@
     <main>
         
         <article>
+
             <div id="img">
             </div>
+
             <div id="form">
+
                 <h1> Login </h1>
+
                 <p id="texto"> Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
+
                 <form action="" method="post" autocomplete="on">
         
-                    <p class="input">
-                        <label for="iemail">
+                    <div class="input">
+
+                        <label for="iemail"> 
         
                             <span class="material-symbols-outlined">
                                 person
                             </span>
+
                         </label>
-                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" required>
-                    </p>
-                    <p class="input">
-                        <label for="isenha">
+
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" required autocomplete="email">
+
+                    </div>
+
+                    <div class="input">
+
+                        <label for="isenha"> 
         
                             <span class="material-symbols-outlined" class="input">
                                 vpn_key
                             </span>
-        
+
                         </label>
-                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="16">
-                    </p>
-                    <input type="submit" value="Enviar" id="entrar">
+
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="16" autocomplete="current-password">
+
+                    </div>
+
+                    <input type="submit" value="Enviar" id="enviar">
+
                     <a href="#" id="esqueci-a-senha"> Esqueci a senha
+
                         <span class="material-symbols-outlined">
                         mail
                         </span>
+
                     </a>
         
                 </form>
+
             </div>
         
     </main>
-
 
     </article>
     

@@ -20,6 +20,8 @@ body, html{
 
 article{
     width: 90vw;
+    height: 320px;
+    border-radius: 6px;
 }
 
 #img{
@@ -28,7 +30,7 @@ article{
     float: left;
 }
 
-#form{
+#formulario{
     float: right;
     width: 70%;
 }
@@ -43,6 +45,8 @@ article{
 
     article{
         width: 950px;
+        height: 400px;
+        border-radius: 6px;
     }
 
     #img{
@@ -51,7 +55,7 @@ article{
         height: 100%;
     }
 
-    #form{
+    #formulario{
         float: left;
         width: 50%;
     }
@@ -61,7 +65,20 @@ article{
     }
 
     #texto{
-        font-size: 1.2em;
+        font-size: 1.1em;
+    }
+
+    #enviar{
+        display: block;
+        color: white;
+        font-size: 1em;
+        background-color: var(--cor1);
+        width: calc(100% - 10px);
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        
+        margin: 10px auto;
     }
 
 }

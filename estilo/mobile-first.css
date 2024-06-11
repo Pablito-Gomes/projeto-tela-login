@@ -40,7 +40,7 @@ main{
 article{
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 540px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px black;
     overflow: hidden;
@@ -78,17 +78,54 @@ h1{
     text-align: center;
     text-align: justify;
     font-size: 0.8em;
+    padding: 10px;
 }
 
-.input{
+#formulario{
+    padding: 0px 10x ;
+    
+}
+
+.campo{
     background-color: var(--cor2);
-    margin: 5px 0px;
-    border-radius: 5px;
+    border: 2px solid var(--cor2);
+    border-radius: 8px;
+    padding: 0px 10px;
+    margin: 10px;
+    width: calc(100% - 10px);
+    height: 40px;
+    margin: 10px auto;
 }
 
-.input > label{
-    float: right;
+.campo > span{
+    font-size: 2em;
+    color: white;
 }
+
+.campo > input{
+    width: calc(100% - 36.5px);
+    height: 100%;
+    padding: 4px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #9ce9e6;
+
+    transform: translateY(-8px);
+}
+
+.campo > input:focus-within{
+    background-color: white;
+    border: none;
+}
+
+
+.campo > label{
+    display: none;
+}
+
+
+
 
 a{
     display: block;
@@ -104,11 +141,12 @@ a{
     color: white;
     font-size: 1em;
     background-color: var(--cor1);
-    width: 100%;
+    width: calc(100% - 10px);
     height: 40px;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
+    
+    margin: 10px auto;
 }
 
 #enviar:hover{
@@ -121,10 +159,11 @@ a{
 
 #esqueci-a-senha{
    display: block;
-   width: 100%;
+   width: calc(100% - 10px);
    height: 40px;
    border: 2px  solid var(--cor1); 
    margin-top: 10px;
+   margin: auto;
 }
 
 #esqueci-a-senha:hover{

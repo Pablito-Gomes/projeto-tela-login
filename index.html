@@ -21,61 +21,108 @@
     <main>
         
         <article>
-
             <div id="img">
+
             </div>
 
-            <div id="form">
+            <div id="formulario">
 
                 <h1> Login </h1>
 
                 <p id="texto"> Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
 
-                <form action="" method="post" autocomplete="on">
-        
-                    <div class="input">
+                <form action="login.php" method="podt" autocomplete="on">
 
-                        <label for="iemail"> 
-        
-                            <span class="material-symbols-outlined">
-                                person
-                            </span>
+                    <div class="campo">
 
-                        </label>
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
 
-                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" required autocomplete="email">
+                        <input type="email" name="e-mail" id="ie-mail" placeholder="Seu e-mail" required>
+
+                        <label for="ie-mail"> Login </label>
 
                     </div>
+                    
+                    <div class="campo">
 
-                    <div class="input">
+                        <span class="material-symbols-outlined" class="input">
+                            vpn_key
+                        </span>
 
-                        <label for="isenha"> 
-        
-                            <span class="material-symbols-outlined" class="input">
-                                vpn_key
-                            </span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" minlength="8" maxlength="20" required>
 
-                        </label>
-
-                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="16" autocomplete="current-password">
+                        <label for="isenha"> Senha </label>
 
                     </div>
 
                     <input type="submit" value="Enviar" id="enviar">
 
-                    <a href="#" id="esqueci-a-senha"> Esqueci a senha
-
-                        <span class="material-symbols-outlined">
+                    <a href="#" id="esqueci-a-senha"> Esqueci a senha <span class="material-symbols-outlined">
                         mail
-                        </span>
-
-                    </a>
-        
+                        </span> </a>
                 </form>
 
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div id="form">
+                <h1> Login </h1>
+                <p id="texto"> Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente. </p>
+                 <form action="login.php" method="post" autocomplete="on">
+        
+                    <div class="input">
+                        
+                        <p>
+                            <label for="iemail">
+                                
+                            </label>
+                            <input type="email" name="email" id="iemail" placeholder="seu e-mail" required autocomplete="email" class="email-e-senha">
+                        </p>
+                    </div>
+                    <div class="input">
+                        
+                        <label for="isenha">
+                            
+                        </label>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="16" autocomplete="current-password" class="email-e-senha">
+                        
+                    </div>
+                    <input type="submit" value="Enviar" id="enviar">
+
+                    <a href="#" id="esqueci-a-senha"> Esqueci a senha
+                        <span class="material-symbols-outlined">
+                        mail
+                        </span>
+                    </a>
+        
+                </form>
+            </div>
+        -->
         
     </main>
+
 
     </article>
     
